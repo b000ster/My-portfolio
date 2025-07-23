@@ -1,13 +1,7 @@
-// Example: smooth scroll for navigation
-// Smooth scroll for navigation
-document.querySelectorAll('.navbar-nav a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    if (this.hash) {
-      e.preventDefault();
-      document.querySelector(this.hash).scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(anchor.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
   });
 });
-

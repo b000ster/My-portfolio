@@ -8,123 +8,104 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
+  <!-- Sidebar / Left Column -->
+  <aside class="sidebar">
+    <div class="profile-avatar">
+      <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752850149/my_image_a8st7g.jpg" alt="Vemula Sai Vikas" />
+    </div>
+    <div class="profile-info">
+      <h2>Vemula Sai Vikas</h2>
+      <h3>Mern Full Stack Developer</h3>
+      <div class="profile-icons">
+        <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849556/html_trnmdl.jpg" alt="HTML" />
+        <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849603/css_vb0m7j.jpg" alt="CSS" />
+        <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849674/js_bskjzs.png" alt="JavaScript" />
+        <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849797/react_k7ueph.png" alt="React" />
+        <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849796/python_uyq8xh.png" alt="Python" />
+        <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849798/sql_u5yeo0.png" alt="SQL" />
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Sections on the Right -->
+  <main class="main-content">
+    <!-- Navbar on top-right -->
     <nav class="navbar">
-      <ul class="navbar-nav">
+      <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section class="hero">
-      <div class="hero-text">
-        <h4>Hi, I'm Vemula Sai Vikas</h4>
-        <h1 class="blue">Mern Full Stack Developer</h1>
-        <p>
-          Seeking a challenging role to utilize my full stack skills and grow personally and professionally.<br>
-          <b>I eat code for breakfast!</b>
-        </p>
-        <button class="cta-btn">View Projects</button>
-      </div>
-      <div class="hero-image">
-        <div class="avatar">
-          <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752850149/my_image_a8st7g.jpg" alt="Vemula Sai Vikas" />
-        </div>
-        <div class="tech-icons">
-          <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849556/html_trnmdl.jpg" alt="HTML" />
-          <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849603/css_vb0m7j.jpg" alt="CSS" />
-          <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849674/js_bskjzs.png" alt="JavaScript" />
-          <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849797/react_k7ueph.png" alt="React" />
-          <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849796/python_uyq8xh.png" alt="Python" />
-          <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752849798/sql_u5yeo0.png" alt="SQL" />
-        </div>
-      </div>
-    </section>
-  </header>
 
-  <main>
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <div class="about-twocol">
-        <div>
-          <h2>About</h2>
-          <p>
-            I am Vemula Sai Vikas, a passionate full stack developer from Siddipet, Telangana. Always eager to tackle new challenges, I thrive on solving problems and leading teams.<br>
-            Coding is not just my profession—<b>it's precious to me</b>.
-          </p>
-        </div>
-        <div>
-          <p>
-            <b>Skills:</b><br>
-            HTML, CSS, Bootstrap, JavaScript, Node.js, React.js, Python, SQL<br><br>
-            <b>Certifications:</b><br>
-            - HTML & CSS, Bootstrap & Flexbox, JavaScript, JavaScript Essentials, SQL, Python, Responsive Web Design — by NxtWave.
-          </p>
-        </div>
-      </div>
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I am Vemula Sai Vikas, a passionate full stack developer from Siddipet, Telangana. Always eager to tackle new challenges, I thrive on solving problems and leading teams.<br>
+        Coding is not just my profession—<b>it's precious to me.</b>
+      </p>
+      <p>
+        <b>Skills:</b> HTML, CSS, Bootstrap, JavaScript, Node.js, React.js, Python, SQL<br>
+        <b>Certifications:</b> HTML & CSS, Bootstrap & Flexbox, JavaScript, JavaScript Essentials, SQL, Python, Responsive Web Design — by NxtWave.
+      </p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <!-- Projects -->
+    <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
           <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752850725/irrigation_mxlrow.jpg" alt="IRRIGATION SYSTEM" class="project-img"/>
           <h3>Automatic Irrigation Water Scheduling System</h3>
           <p>Designed and built a system to monitor and control water flow for irrigation using sensors and automation.</p>
-          <!-- <a href="#" class="view-btn">View</a> -->
         </div>
         <div class="project-card">
           <img src="https://res.cloudinary.com/dbo1v8cqw/image/upload/v1752850732/blutooth_rttkoh.jpg" alt="BLUETOOTH VOICE ASSISTANT" class="project-img"/>
           <h3>Bluetooth Voice Assistant Electrical Device Control in Home</h3>
           <p>Developed an advanced home automation system for controlling electrical devices via voice commands through Bluetooth, focused on aiding physically challenged individuals.</p>
-          <!-- <a href="#" class="view-btn">View</a> -->
         </div>
         <div class="project-card">
-          <img src="todoapp.png" alt="ToDo App" class="project-img"/>
-          <h3>ToDo App (Sample)</h3>
-          <p>MERN stack application for task management (add your own details for more projects as you build them).</p>
+          <img src="https://b000ster.github.io/memory-game/Screenshot-2025-07-23-172336.jpg" alt="Memory Game Screenshot" class="project-img" />
+          <h3>Memory Game</h3>
+          <p>A fun, responsive memory card game featuring animations, move tracking, and a celebratory star animation upon completion.</p>
+          <div class="project-links">
+            <a href="https://b000ster.github.io/memory-game/" target="_blank" class="view-btn">Live Demo</a>
+            <a href="https://github.com/b000ster/memory-game" target="_blank" class="view-btn">View Code</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="contact-flex">
-        <div class="contact-info">
-          <h2>Contact</h2>
-          <p>Currently seeking a <b>Mern Full Stack Developer</b> position (remote or onsite). Reach out to connect!</p>
-          <ul>
-            <li><i class="fa-solid fa-envelope"></i> saivikas.vemula67@gmail.com</li>
-            <li><i class="fa-brands fa-linkedin"></i> linkedin.com/in/saivikas-vemula</li>
-            <li><i class="fa-brands fa-github"></i> github.com/b000ster</li>
-            <li><i class="fa-solid fa-phone"></i> +91 6305471314</li>
-            <li><i class="fa-solid fa-location-dot"></i>Siddipet, Telangana — 502103.</li>
-          </ul>
-        </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" placeholder="Your Name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="name@email.com" required />
-          </label>
-          <label>
-            Message
-            <textarea placeholder="How can I help?" rows="3" required></textarea>
-          </label>
-          <button type="submit" class="cta-btn">Send</button>
-        </form>
-      </div>
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <h2>Contact</h2>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> saivikas.vemula67@gmail.com</li>
+        <li><i class="fa-brands fa-linkedin"></i> linkedin.com/in/saivikas-vemula</li>
+        <li><i class="fa-brands fa-github"></i> github.com/b000ster</li>
+        <li><i class="fa-solid fa-phone"></i> +91 6305471314</li>
+        <li><i class="fa-solid fa-location-dot"></i>Siddipet, Telangana — 502103</li>
+      </ul>
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" placeholder="Your Name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="name@email.com" required />
+        </label>
+        <label>
+          Message
+          <textarea placeholder="How can I help?" rows="3" required></textarea>
+        </label>
+        <button type="submit" class="cta-btn">Send</button>
+      </form>
     </section>
+    <footer class="footer">
+      <p>© Vemula Sai Vikas 2025</p>
+    </footer>
   </main>
-
-  <footer class="footer">
-    <p>© Vemula Sai Vikas 2025</p>
-  </footer>
-  <script src="script.js"></script>
 </body>
 </html>
-
