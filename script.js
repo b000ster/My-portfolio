@@ -1,7 +1,9 @@
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
     e.preventDefault();
-    document.querySelector(anchor.getAttribute('href'))
-      .scrollIntoView({ behavior: 'smooth' });
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 });
